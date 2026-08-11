@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>رسيس · مطعم في قلب الناصرة القديمة</title>
+<meta name="description" content="رسيس - مطعم داخل مبنى تاريخي في قلب الناصرة القديمة" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="paper-grain"></div>
+
+<nav class="nav">
+  <div class="nav-badge">رسيس</div>
+  <ul class="nav-links">
+    <li><a href="#reviews">آراء الزوار</a></li>
+    <li><a href="#story">قصتنا</a></li>
+    <li><a href="#gallery">صور المحل</a></li>
+    <li><a href="#menu">المنيو</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+  <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">المنيو ↗</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="halftone-overlay"></div>
+  <div class="stamp"><span>نـاصـرة<br/>البلدة القديمة</span></div>
+
+  <a class="rating-badge" href="#reviews" aria-label="شاهد تقييمات رسيس">
+    <span class="rb-num">5.0</span>
+    <span class="rb-stars">★★★★★</span>
+    <span class="rb-label">تقييمنا على جوجل</span>
+  </a>
+
+  <h1>رسيس</h1>
+  <div class="en">R A S E E S · N A Z A R E T H</div>
+  <p class="tagline">في رسيس، الكتب تروي حكاياتها على الرفوف، والأطباق تروي حكاياتها على المائدة</p>
+  <div class="locus-ribbon"><span class="ribbon">مطعم داخل مبنى تاريخي · شارع توفيق زياد، الناصرة</span></div>
+
+  <div class="hero-actions">
+    <a class="btn btn-gold-outline" href="#reviews">قيّمونا الآن ⭐</a>
+    <a class="btn btn-rust" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">شاهد المنيو ↗</a>
+  </div>
+</header>
+
+<!-- REVIEWS — very prominent, right after hero -->
+<section id="reviews" class="reviews">
+  <div class="review-wrap">
+    <span class="ribbon">دفتر الزوار</span>
+    <h2 class="sec-title">كيف كانت تجربتك معنا؟</h2>
+    <p class="sec-sub">رأيك بيهمنا كتير — ثانية وحدة وبتخلص</p>
+
+    <div class="ledger">
+      <div class="ledger-q">قيّم زيارتك</div>
+      <div class="ledger-hint">اضغط على نجمة</div>
+      <div class="stars" id="rv-stars">
+        <button class="star" data-val="1" aria-label="نجمة واحدة">★</button>
+        <button class="star" data-val="2" aria-label="نجمتان">★</button>
+        <button class="star" data-val="3" aria-label="3 نجوم">★</button>
+        <button class="star" data-val="4" aria-label="4 نجوم">★</button>
+        <button class="star" data-val="5" aria-label="5 نجوم">★</button>
+      </div>
+
+      <div class="rv-panel hidden" id="rv-low">
+        <textarea id="rv-low-text" placeholder="احكيلنا شو ممكن نحسّن..."></textarea>
+        <button class="btn btn-teal" id="rv-low-send">إرسال الملاحظة</button>
+      </div>
+
+      <div class="rv-thanks hidden" id="rv-thanks"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="story">
+  <div class="story-grid">
+    <div class="photo-slot">
+      <span class="icon">📷</span>
+      <span>مكان لصورة من داخل المطعم<br/>(الرفوف، الجلسات، تفاصيل الديكور)</span>
+    </div>
+    <div class="story-text">
+      <span class="ribbon">قصتنا</span>
+      <h2 class="sec-title" style="text-align:right; margin-bottom:20px;">بيت قديم... حكاية بتتجدد</h2>
+      <p>
+        رسيس بيسكن جوا مبنى تاريخي بقلب الناصرة القديمة — مكان كل حجر فيه بيحمل ذكرى، وكل زاوية
+        بتحكي عن مرحلة مختلفة من عمر المدينة. حافظنا على روح المكان وسويناها بيت دافئ فيه رفوف
+        كتب وزوايا قراءة وجو مطعم أصيل.
+      </p>
+      <p>
+        هون، الأكل مش كل القصة — المبنى نفسه، تاريخه، والجو المحيط فيه جزء أساسي من الزيارة.
+      </p>
+      <div class="note-tag">✎ نص مؤقت — بحاجة تفاصيل حقيقية عن تاريخ المبنى (سنة البناء، استخدامه قبل ما يصير مطعم، قصص محلية) لأكتب النص النهائي.</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="sec-head">
+    <span class="ribbon">من داخل رسيس</span>
+    <h2 class="sec-title">صور المحل</h2>
+    <p class="sec-sub">هاد المكان بيتعبى بصوركم — واجهة المبنى، الجلسات، الأطباق، وتفاصيل الديكور.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-slot"><span class="icon">🏛️</span><span>واجهة المبنى</span></div>
+    <div class="gallery-slot"><span class="icon">🪑</span><span>الجلسة الداخلية</span></div>
+    <div class="gallery-slot"><span class="icon">🍝</span><span>أطباق مميزة</span></div>
+    <div class="gallery-slot"><span class="icon">📚</span><span>رفوف الكتب</span></div>
+    <div class="gallery-slot"><span class="icon">☕</span><span>ركن القهوة</span></div>
+    <div class="gallery-slot"><span class="icon">🌇</span><span>المطعم مساءً</span></div>
+    <div class="gallery-slot"><span class="icon">👨‍🍳</span><span>المطبخ / الفريق</span></div>
+    <div class="gallery-slot"><span class="icon">🕯️</span><span>تفاصيل الديكور</span></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-sec">
+  <div class="halftone"></div>
+  <div class="sec-head">
+    <span class="ribbon">شو رح ناكل؟</span>
+    <h2 class="sec-title">كل طبق... فصل من القصة</h2>
+  </div>
+  <div class="catalog">
+    <h3>المنيو الكامل</h3>
+    <p>إيطالي، طابون، سلطات، أطباق رئيسية وحلويات — شوف كل شي منطبخو برسيس.</p>
+    <a class="btn btn-rust" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">فتح المنيو ↗</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div>
+    <h4>رسيس</h4>
+    <p>مطعم داخل مبنى تاريخي بقلب الناصرة<br/>شارع توفيق زياد 17، الناصرة 1600943</p>
+    <a class="social-link" href="https://www.google.com/maps/search/?api=1&query=Tawfiq+Ziad+St+17+Nazareth" target="_blank" rel="noopener">📍 فتح الموقع على خرائط جوجل ↗</a>
+  </div>
+  <div>
+    <h4>ساعات الدوام</h4>
+    <p>مفتوح يومياً حتى الساعة 11:00 مساءً</p>
+    <div class="note-tag" style="margin-top:10px;">✎ إذا في ساعات مختلفة حسب اليوم، ابعتلي الجدول الكامل نحطه بالتفصيل</div>
+  </div>
+  <div>
+    <h4>تواصل معنا</h4>
+    <p><a href="tel:0549188668">📞 054-918-8668</a></p>
+    <p><a class="social-link" href="https://www.instagram.com/rasees.rest/" target="_blank" rel="noopener">📷 إنستقرام</a></p>
+    <p><a class="social-link" href="https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/" target="_blank" rel="noopener">📘 فيسبوك</a></p>
+  </div>
+  <div class="footer-bottom">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
