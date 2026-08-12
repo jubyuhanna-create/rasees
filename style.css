@@ -98,7 +98,9 @@ section{ padding:100px 6vw; }
   border:1px solid var(--line-light);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
   box-shadow:0 30px 60px rgba(0,0,0,0.35);
+  overflow:hidden;
 }
+.hero-photo img{ width:100%; height:100%; object-fit:cover; }
 
 .hero-strip{
   max-width:1200px; margin:0 auto; padding:0 6vw 70px;
@@ -108,7 +110,9 @@ section{ padding:100px 6vw; }
 .strip-slot{
   aspect-ratio:1/1; border-radius:10px; background:var(--navy-soft); border:1px solid var(--line-light);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+  overflow:hidden;
 }
+.strip-slot img{ width:100%; height:100%; object-fit:cover; }
 
 /* ===== feedback ===== */
 .feedback-sec{ background:var(--navy-deep); display:flex; justify-content:center; }
@@ -169,8 +173,12 @@ section{ padding:100px 6vw; }
   background:var(--paper2);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
   transition:background .2s ease;
+  overflow:hidden;
 }
 .gallery-slot:hover{ background:#E9E2D0; }
+.gallery-slot.has-img{ border-style:solid; border-color:var(--line-light); }
+.gallery-slot.has-img img{ width:100%; height:100%; object-fit:cover; }
+
 
 /* ===== story ===== */
 .story{ background:var(--paper2); }
