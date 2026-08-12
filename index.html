@@ -7,75 +7,93 @@
 <meta name="description" content="رسيس - مطعم داخل مبنى تاريخي في قلب الناصرة القديمة" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="paper-grain"></div>
 
+<!-- NAV -->
 <nav class="nav">
-  <div class="nav-badge">رسيس</div>
+  <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
   <ul class="nav-links">
-    <li><a href="#reviews">آراء الزوار</a></li>
-    <li><a href="#story">قصتنا</a></li>
+    <li><a href="#feedback">رأيك يهمنا</a></li>
     <li><a href="#gallery">صور المحل</a></li>
-    <li><a href="#menu">المنيو</a></li>
+    <li><a href="#story">قصتنا</a></li>
     <li><a href="#contact">تواصل معنا</a></li>
   </ul>
-  <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">المنيو ↗</a>
+  <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">القائمة</a>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-  <div class="halftone-overlay"></div>
-  <div class="stamp"><span>نـاصـرة<br/>البلدة القديمة</span></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">رسيس · الناصرة</span>
+      <h1>تجربة طعام معاصرة<br/><span class="en">A Contemporary Dining Experience</span></h1>
+      <p>حيث يلتقي التقليد بالأصالة، داخل مبنى تاريخي في قلب الناصرة القديمة</p>
+      <div class="hero-btns">
+        <a class="btn btn-teal" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">اكتشف القائمة</a>
+        <a class="btn btn-outline" href="#feedback">قيّمونا ⭐</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <span class="ph-icon">🍽️</span>
+      <span class="ph-text">صورة رئيسية لطبق مميز</span>
+    </div>
+  </div>
 
-  <a class="rating-badge" href="#reviews" aria-label="شاهد تقييمات رسيس">
-    <span class="rb-num">5.0</span>
-    <span class="rb-stars">★★★★★</span>
-    <span class="rb-label">تقييمنا على جوجل</span>
-  </a>
-
-  <h1>رسيس</h1>
-  <div class="en">R A S E E S · N A Z A R E T H</div>
-  <p class="tagline">في رسيس، الكتب تروي حكاياتها على الرفوف، والأطباق تروي حكاياتها على المائدة</p>
-  <div class="locus-ribbon"><span class="ribbon">مطعم داخل مبنى تاريخي · شارع توفيق زياد، الناصرة</span></div>
-
-  <div class="hero-actions">
-    <a class="btn btn-gold-outline" href="#reviews">قيّمونا الآن ⭐</a>
-    <a class="btn btn-rust" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">شاهد المنيو ↗</a>
+  <div class="hero-strip">
+    <div class="strip-slot"><span class="ph-icon">☕</span><span class="ph-text">القهوة العربية</span></div>
+    <div class="strip-slot"><span class="ph-icon">🪑</span><span class="ph-text">الجلسة الداخلية</span></div>
+    <div class="strip-slot"><span class="ph-icon">🍳</span><span class="ph-text">أطباق الإفطار</span></div>
+    <div class="strip-slot"><span class="ph-icon">🥗</span><span class="ph-text">أطباق رئيسية</span></div>
   </div>
 </header>
 
-<!-- REVIEWS — very prominent, right after hero -->
-<section id="reviews" class="reviews">
-  <div class="review-wrap">
-    <span class="ribbon">دفتر الزوار</span>
-    <h2 class="sec-title">كيف كانت تجربتك معنا؟</h2>
-    <p class="sec-sub">رأيك بيهمنا كتير — ثانية وحدة وبتخلص</p>
+<!-- FEEDBACK — prominent, dark card -->
+<section id="feedback" class="feedback-sec">
+  <div class="fb-card">
+    <span class="eyebrow eyebrow-light">دفتر الزوار</span>
+    <h2 class="fb-title">رأيك يهمنا<br/><span class="en">Your Feedback Matters</span></h2>
 
-    <div class="ledger">
-      <div class="ledger-q">قيّم زيارتك</div>
-      <div class="ledger-hint">اضغط على نجمة</div>
-      <div class="stars" id="rv-stars">
-        <button class="star" data-val="1" aria-label="نجمة واحدة">★</button>
-        <button class="star" data-val="2" aria-label="نجمتان">★</button>
-        <button class="star" data-val="3" aria-label="3 نجوم">★</button>
-        <button class="star" data-val="4" aria-label="4 نجوم">★</button>
-        <button class="star" data-val="5" aria-label="5 نجوم">★</button>
-      </div>
-
-      <div class="rv-panel hidden" id="rv-low">
-        <textarea id="rv-low-text" placeholder="احكيلنا شو ممكن نحسّن..."></textarea>
-        <div class="optional-contact">
-          <input type="text" id="rv-low-name" placeholder="الاسم (اختياري)" />
-          <input type="tel" id="rv-low-phone" placeholder="رقم الهاتف (اختياري)" />
-        </div>
-        <button class="btn btn-teal" id="rv-low-send">إرسال الملاحظة</button>
-      </div>
-
-      <div class="rv-thanks hidden" id="rv-thanks"></div>
+    <div class="stars" id="rv-stars">
+      <button class="star" data-val="1" aria-label="نجمة واحدة">★</button>
+      <button class="star" data-val="2" aria-label="نجمتان">★</button>
+      <button class="star" data-val="3" aria-label="3 نجوم">★</button>
+      <button class="star" data-val="4" aria-label="4 نجوم">★</button>
+      <button class="star" data-val="5" aria-label="5 نجوم">★</button>
     </div>
+    <div class="ledger-hint">اضغط على نجمة للتقييم</div>
+
+    <div class="rv-panel hidden" id="rv-low">
+      <textarea id="rv-low-text" placeholder="اكتب تعليقك..."></textarea>
+      <div class="optional-contact">
+        <input type="text" id="rv-low-name" placeholder="الاسم (اختياري)" />
+        <input type="tel" id="rv-low-phone" placeholder="رقم الهاتف (اختياري)" />
+      </div>
+      <button class="btn btn-teal" id="rv-low-send" style="width:100%;">إرسال الملاحظة</button>
+    </div>
+
+    <div class="rv-thanks hidden" id="rv-thanks"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="sec-head">
+    <span class="eyebrow">من داخل رسيس</span>
+    <h2 class="sec-title">صور المحل</h2>
+    <p class="sec-sub">هاد المكان بيتعبى بصوركم — واجهة المبنى، الجلسات، الأطباق، وتفاصيل الديكور.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-slot"><span class="ph-icon">🏛️</span><span class="ph-text">واجهة المبنى</span></div>
+    <div class="gallery-slot"><span class="ph-icon">🪑</span><span class="ph-text">الجلسة الداخلية</span></div>
+    <div class="gallery-slot"><span class="ph-icon">🍝</span><span class="ph-text">أطباق مميزة</span></div>
+    <div class="gallery-slot"><span class="ph-icon">📚</span><span class="ph-text">رفوف الكتب</span></div>
+    <div class="gallery-slot"><span class="ph-icon">☕</span><span class="ph-text">ركن القهوة</span></div>
+    <div class="gallery-slot"><span class="ph-icon">🌇</span><span class="ph-text">المطعم مساءً</span></div>
+    <div class="gallery-slot"><span class="ph-icon">👨‍🍳</span><span class="ph-text">المطبخ / الفريق</span></div>
+    <div class="gallery-slot"><span class="ph-icon">🕯️</span><span class="ph-text">تفاصيل الديكور</span></div>
   </div>
 </section>
 
@@ -83,77 +101,53 @@
 <section id="story" class="story">
   <div class="story-grid">
     <div class="photo-slot">
-      <span class="icon">📷</span>
-      <span>مكان لصورة من داخل المطعم<br/>(الرفوف، الجلسات، تفاصيل الديكور)</span>
+      <span class="ph-icon">📷</span>
+      <span class="ph-text">مكان لصورة من داخل المطعم<br/>(الرفوف، الجلسات، تفاصيل الديكور)</span>
     </div>
     <div class="story-text">
-      <span class="ribbon">قصتنا</span>
-      <h2 class="sec-title" style="text-align:right; margin-bottom:20px;">بيت قديم... حكاية بتتجدد</h2>
+      <span class="eyebrow">قصتنا</span>
+      <h2 class="sec-title" style="margin-bottom:20px;">بيت قديم... حكاية بتتجدد</h2>
       <p>
         رسيس بيسكن جوا مبنى تاريخي بقلب الناصرة القديمة — مكان كل حجر فيه بيحمل ذكرى، وكل زاوية
         بتحكي عن مرحلة مختلفة من عمر المدينة. حافظنا على روح المكان وسويناها بيت دافئ فيه رفوف
         كتب وزوايا قراءة وجو مطعم أصيل.
       </p>
-      <p>
-        هون، الأكل مش كل القصة — المبنى نفسه، تاريخه، والجو المحيط فيه جزء أساسي من الزيارة.
-      </p>
-      <div class="note-tag">✎ نص مؤقت — بحاجة تفاصيل حقيقية عن تاريخ المبنى (سنة البناء، استخدامه قبل ما يصير مطعم، قصص محلية) لأكتب النص النهائي.</div>
+      <p>هون، الأكل مش كل القصة — المبنى نفسه، تاريخه، والجو المحيط فيه جزء أساسي من الزيارة.</p>
+      <div class="note-tag">✎ نص مؤقت — بحاجة تفاصيل حقيقية عن تاريخ المبنى لأكتب النص النهائي.</div>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
+<!-- CONTACT -->
+<section id="contact" class="contact-sec">
   <div class="sec-head">
-    <span class="ribbon">من داخل رسيس</span>
-    <h2 class="sec-title">صور المحل</h2>
-    <p class="sec-sub">هاد المكان بيتعبى بصوركم — واجهة المبنى، الجلسات، الأطباق، وتفاصيل الديكور.</p>
+    <span class="eyebrow">وين نلاقيكم</span>
+    <h2 class="sec-title">تواصل معنا</h2>
   </div>
-  <div class="gallery-grid">
-    <div class="gallery-slot"><span class="icon">🏛️</span><span>واجهة المبنى</span></div>
-    <div class="gallery-slot"><span class="icon">🪑</span><span>الجلسة الداخلية</span></div>
-    <div class="gallery-slot"><span class="icon">🍝</span><span>أطباق مميزة</span></div>
-    <div class="gallery-slot"><span class="icon">📚</span><span>رفوف الكتب</span></div>
-    <div class="gallery-slot"><span class="icon">☕</span><span>ركن القهوة</span></div>
-    <div class="gallery-slot"><span class="icon">🌇</span><span>المطعم مساءً</span></div>
-    <div class="gallery-slot"><span class="icon">👨‍🍳</span><span>المطبخ / الفريق</span></div>
-    <div class="gallery-slot"><span class="icon">🕯️</span><span>تفاصيل الديكور</span></div>
+  <div class="contact-grid">
+    <div class="map-wrap">
+      <iframe
+        title="موقع رسيس على الخريطة"
+        src="https://www.google.com/maps?q=Tawfiq+Ziad+St+17+Nazareth&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-card">
+      <h3>معلومات التواصل</h3>
+      <ul class="contact-list">
+        <li><span class="ci">📍</span><span>شارع توفيق زياد 17، الناصرة 1600943</span></li>
+        <li><span class="ci">🕐</span><span>مفتوح يومياً حتى الساعة 11:00 مساءً</span></li>
+        <li><span class="ci">📞</span><a href="tel:0549188668">054-918-8668</a></li>
+        <li><span class="ci">📷</span><a href="https://www.instagram.com/rasees.rest/" target="_blank" rel="noopener">إنستقرام</a></li>
+        <li><span class="ci">📘</span><a href="https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/" target="_blank" rel="noopener">فيسبوك</a></li>
+      </ul>
+      <a class="btn btn-teal" style="width:100%; margin-top:22px;" href="https://wa.me/972549188668" target="_blank" rel="noopener">راسلونا على واتساب</a>
+    </div>
   </div>
 </section>
 
-<!-- MENU -->
-<section id="menu" class="menu-sec">
-  <div class="halftone"></div>
-  <div class="sec-head">
-    <span class="ribbon">شو رح ناكل؟</span>
-    <h2 class="sec-title">كل طبق... فصل من القصة</h2>
-  </div>
-  <div class="catalog">
-    <h3>المنيو الكامل</h3>
-    <p>إيطالي، طابون، سلطات، أطباق رئيسية وحلويات — شوف كل شي منطبخو برسيس.</p>
-    <a class="btn btn-rust" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">فتح المنيو ↗</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="contact">
-  <div>
-    <h4>رسيس</h4>
-    <p>مطعم داخل مبنى تاريخي بقلب الناصرة<br/>شارع توفيق زياد 17، الناصرة 1600943</p>
-    <a class="social-link" href="https://www.google.com/maps/search/?api=1&query=Tawfiq+Ziad+St+17+Nazareth" target="_blank" rel="noopener">📍 فتح الموقع على خرائط جوجل ↗</a>
-  </div>
-  <div>
-    <h4>ساعات الدوام</h4>
-    <p>مفتوح يومياً حتى الساعة 11:00 مساءً</p>
-    <div class="note-tag" style="margin-top:10px;">✎ إذا في ساعات مختلفة حسب اليوم، ابعتلي الجدول الكامل نحطه بالتفصيل</div>
-  </div>
-  <div>
-    <h4>تواصل معنا</h4>
-    <p><a href="tel:0549188668">📞 054-918-8668</a></p>
-    <p><a class="social-link" href="https://www.instagram.com/rasees.rest/" target="_blank" rel="noopener">📷 إنستقرام</a></p>
-    <p><a class="social-link" href="https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/" target="_blank" rel="noopener">📘 فيسبوك</a></p>
-  </div>
-  <div class="footer-bottom">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</div>
+<footer>
+  <img class="footer-logo" src="assets/logo.png" alt="رسيس" />
+  <p>رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
 </footer>
 
 <script src="script.js"></script>
